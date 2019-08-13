@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<!--
+
+Psuedo code:
+    
+incerement a variable to 50
+add each iteration of the variable to another
+divide this last one by 50
+
+-->
+
+<meta charset="ISO-8859-1">
+<title>IT213 Unit 5 Exercise 2 </title>
+    <h1>IT213 Unit 5 Exercise 2</h1>
+</head>
+
+<body onload="SumAndAverage()">
+    <script type="text/javascript">
+        function SumAndAverage () {
+            var sum = 0;
+            for(var i = 1; i <= 50; i++){
+                sum += i;
+                document.writeln("Var i is: " + i+"<br>");
+            }
+            var avg = sum / 50;
+            document.writeln("The average is: "+ avg);
+        }
+    </script>
+</body>
+
+</html>

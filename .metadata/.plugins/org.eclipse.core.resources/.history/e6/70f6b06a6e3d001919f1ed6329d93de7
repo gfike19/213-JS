@@ -1,0 +1,4 @@
+<?php
+$String = "20";
+$number = settype($String, "integer");
+?>

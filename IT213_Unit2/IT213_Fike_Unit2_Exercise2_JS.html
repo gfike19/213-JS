@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function simpleIf(){
+	var grade = document.getElementById('grade').value;
+	
+	if (grade >= 60) {
+		alert("Passed");
+	}
+}
+</script>
+</head>
+<body>
+
+
+
+<form method="post">
+<label class="label1">Enter a grade:</label>
+<input type="number" name="grade" id = "grade">
+<input type="button" value=" Submit " onclick="simpleIf()">
+</form>
+
+</body>
+</html>

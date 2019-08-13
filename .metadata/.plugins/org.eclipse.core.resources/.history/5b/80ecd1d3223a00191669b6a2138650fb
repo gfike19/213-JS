@@ -1,0 +1,4 @@
+var name = "John Smith";
+var address = "101 N. Main Street city: Anytown";
+var state = "TX";
+var zipCode = 11111;

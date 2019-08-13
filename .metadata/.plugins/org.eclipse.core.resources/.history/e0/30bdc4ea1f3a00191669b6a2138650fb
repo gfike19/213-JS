@@ -1,0 +1,9 @@
+var num = 25;
+var num2 = 5;
+/**print(A. Subtract num1 from num2.
+          B. Subtract num2 from num1.
+          C. Multiply num1 and num2.
+          D. Divide num1 by num2.
+          E. Increment the value of num1.
+          F. Decrement the value of num2.)
+**/

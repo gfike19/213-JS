@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="Javascript" type="text/javascript">
+            function celsius(temp) {
+                var cTemp = 5.0/9.0 * (temp - 32);
+                return cTemp;
+            }
+            
+            function farenheit(temp) {
+                var fTemp = 9.0/5.0 * temp + 32;
+                return fTemp;
+            }
+
+            function main() {
+                var temp = parseInt(prompt("EEnter a number ", ""));
+
+                document.writeln(temp + " is " + celsius(temp) + " degerees Celsius<br>");
+                document.writeln(temp + " is " + farenheit(temp) + " degrees Farenheit");
+            }
+            </script>
+    </head>
+    <body onload="main()">
+    </body>
+</html>

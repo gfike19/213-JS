@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="Javascript" type="text/javascript">
+            function celsius(temp) {
+                var cTemp = 5.0/9.0 * (temp - 32);
+                return cTemp;
+            }
+            
+            function farenheit(temp) {
+                var fTemp = 9.0/5.0 * temp + 32;
+                return fTemp;
+            }
+
+            function main() 
+            {
+                var temps = [10,15,20,25,30,32,40,45,50,55,60,65,70];
+                for(var i = 0; i < temps.length; i++) {
+                    var fMsg = " ";
+                    var cMsg = "";
+
+                    var cTemp = celsius(i).toFixed(2);
+                    var fTemp = farenheit(i).toFixed(2);
+                    document.writeln(i, " degrees Fahrenheit is ", cTemp ," degrees Celsius<br>");
+                    document.writeln(i," degrees Celsius is ", fTemp, " degrees Fahrenheit<br><br>");
+                }
+            }
+        </script>
+        <body onload="main()"></body>
+    </head>
+</html>

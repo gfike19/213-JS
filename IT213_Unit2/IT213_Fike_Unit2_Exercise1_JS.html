@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Exercise</title>
+<script type="text/javascript">
+function greaterNum(){
+var value1 = document.getElementById('num1').value;
+var value2 = document.getElementById('num2').value;
+if (value1 > value2){
+alert("Value 1 is greater than value 2");
+}
+if (value2 > value1){
+alert("Value 2 is greater than value 1");
+}
+if(value1 >= value2){
+alert("Value 1 is equal to or greater than value 2")
+}
+if(value1 <= value2){
+alert("Value 1 is equal to or less than value 2")
+}
+}
+</script>
+</head>
+<body>
+<form>
+<label class="label1">Enter Value 1:</label>
+<input type="number" name="num1" id = "num1">
+<label class="label2">Enter Value 2:</label>
+<input type="number" name="num2" id = "num2">
+<br/><br/>
+<input type="button" value=" See relationship between numbers " onclick="greaterNum()">
+</form>
+</body>
+</html>

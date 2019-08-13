@@ -1,0 +1,10 @@
+var name = "John Smith";
+var address = "101 N. Main Street";
+var city = "Anytown";
+var state = "TX";
+var zipCode = 11111;
+var userName;
+var pinNumber;
+var tuitionOwed;
+const CostPerUnit = 100.00;
+console.log("name: " + name +"\naddress: " + address + "city: " + city +  "\nstate: " + state + "\nzipCode: " + zipCode + "\nnumberUnitsTaken: 18");

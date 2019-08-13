@@ -1,0 +1,6 @@
+<?php
+$name = "John Smith";
+$address = "101 N. Main Street";
+$city = "Anytown";
+$state = "TX";
+?>

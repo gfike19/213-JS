@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type="text/javascript">
+            function Manifest(){
+                var count = 0;
+                var seatList = [];
+                var nameList = [];
+
+                while(count < 3) {
+                    var choice = prompt("Would like to be in economy or first class (E/F)? ");
+                    var seaet = "";
+
+                    if (choice == "e") {
+                        seat = "economy";
+                    }
+                    if (choice == "f") {
+                        seat = "first class";
+                    }
+                    seatList.push(seat);
+
+                    var name = prompt("Please enter your name: ");
+                    nameList.push(name);
+                    count++;
+                }
+
+                document.write("Passengers and Seat Type:<br>");
+
+                for(var index = 0; index < 3; index++) {
+                    document.write(nameList[index], " is in ",seatList[index],"<br>");
+                }
+            }
+        </script>
+    </head>
+    <body onload="Manifest()"></body>
+</html>

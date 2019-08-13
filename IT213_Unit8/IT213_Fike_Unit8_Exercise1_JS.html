@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<Title>
+			<h1>Array Program</h1>
+		</Title>
+</head>
+<body>
+	<p id="demo">Initialize an Array</p>
+	Unit 8
+		<button type="button" onclick="myFunction()">Initialize anArray</button>
+		<script>
+		// Create an array, initialize the elements and display them
+			functionmyFunction()
+			{
+				var n1 = new Array( 10 ); // allocate five-element array
+				// assign values to each element of array n1
+				var length = n1.length; // get array's length once before the loop
+				for ( var i = 0; i < length; ++i )
+					{
+					n1[ i ] = i;
+					document.writeln("<h1>Array index " + i + " is equal to " + i +"</h1>");
+					} // end for
+				document.writeln("<h2> Array is now populated and initialized </h2>");
+			} // end function
+		</script>
+</body>
+</html>

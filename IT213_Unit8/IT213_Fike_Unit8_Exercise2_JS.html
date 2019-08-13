@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function studentAverage() {
+				var numStudents = parseInt(prompt("How many students are there?",""));
+				var arrGrades = [];
+				var total = 0;
+				for(var i =0; i < numStudents; i++) {
+					var grade = parseInt(prompt("Enter the students grade: ", ""));
+					arrGrades.push(grade);
+					total += grade;
+				}
+				var avg = total/arrGrades.length;
+				for(var i = 0; i < arrGrades.length; i++){
+					document.write(arrGrades[i],"<br>")
+				}
+				document.write("Class average is: ", avg);
+				// arrGrades.foreach(function(element) {
+				// 	document.write(element + "<br>");
+				// });
+				
+				// for(var j; j < arrGrades.length; j++) {
+				// 	document.write(arrGrades[j].toString() + "<br>");
+				// 	document.write("testing tesing 1 2 3");
+				// }
+				// document.write(arrGrades.toString());
+				
+				// var total = arrGrades.reduce(getSum);
+				// var avg = total/arrGrades.length;
+				// document.write("Class average is: " + avg.toString());
+			}
+			// function getSum(total, num) {
+			//   return total + num;
+			// }
+		</script>
+	</head>
+	<body onload="studentAverage()">
+	</body>
+</html>

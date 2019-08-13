@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function switchCase(){
+	var num = Number(document.getElementById('num').value);
+	
+	switch(num) {
+	case 0:
+		alert ("The day of the week is Sunday");
+		break;
+	
+	case 1:
+		alert ("The day of the week is Monday");
+		break;
+	
+	case 2:
+		alert ("The day of the week is Tuesday");
+		break;
+	
+	case 3:
+		alert ("The day of the week is Wednesday");
+		break;
+	
+	case 4:
+		alert ("The day of the week is Thursday");
+		break;
+	
+	case 5:
+		alert ("The day of the week is Friday");
+		break;
+	
+	case 6:
+		alert ("The day of the week is Saturday");
+	}
+	
+	
+}
+</script>
+
+</head>
+<body>
+<form method="post">
+Enter a grade: <input type="number" name="num" id = "num"/>
+<input type="button" value=" Submit " onclick="switchCase()"/>
+</form>
+</body>
+</html>

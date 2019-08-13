@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Coding Project 1</title>
+<h1>Coding Project 1</h1>
+
+<script type="text/javascript">
+function NestedWhile () {
+
+    var k = 5;
+    var i = 0;
+
+    while(k > 1) {
+        document.writeln(" k = " + k + " i = " + i + "<br>");
+        while(i < 10) {
+            i += 2;
+            document.writeln(" k = " + k + " i = " + i + "<br>");
+        }
+        // document.writeln(" k = " + k + " i = " + i + "<br>");
+        k--;
+        i = 0;
+        // document.writeln(" k = " + k + " i = " + i + "<br>");
+    }
+    
+}
+</script>
+<body>
+        <input type="button" value="Submit" onclick="NestedWhile()">
+</body>
+</head>
+</html>

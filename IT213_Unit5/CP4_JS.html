@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>IT213 Fike Unit 5 Coding Project 4
+    <script type="text/javascript">
+        function sentenceCounter () {
+            var sentence;
+            sentence = "The quick brown fox jumps over the lazy dog.";
+            var wordCount = 1;
+            var word = "";
+            for(var i = 0; i <= sentence.length; i++) {
+                if(sentence[i] != " ") {
+                    word += sentence[i];
+                }
+                else {
+                    document.writeln(wordCount + " " + word + "<br>");
+                    wordCount ++;
+                    word = "";
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="sentenceCounter()">
+
+</body>
+
+</html>

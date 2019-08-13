@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<!--
+
+Psuedo code:
+    
+get grade
+if grade is greater than or equal to 60 preint pass
+otherwise print fail
+
+-->
+
+<meta charset="ISO-8859-1">
+<title>IT213 Unit 5 Exercise 1 </title>
+    <h1>IT213 Unit 5 Exercise </h1>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function CheckPassFail () {
+            var grade = document.getElementById('grade').value;
+
+            if (grade >= 60) {
+		alert("Pass");
+	}
+	else{
+		alert("FAIL");
+	}
+        }
+    </script>
+
+<form>
+        <label class="label1">Enter a grade:</label>
+        <input type="number" name="grade" id = "grade">
+        <input type="button" value=" Submit " onclick="CheckPassFail()">
+        </form>
+
+</body>
+
+</html>

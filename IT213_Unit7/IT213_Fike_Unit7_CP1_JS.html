@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<!--
+
+4 if the average grade is 90-100, 
+3 if 80-89, 
+2 if 70-79, 
+1 if 60-69 and 
+0 if lower than 60
+
+ -->
+<html>
+	<head>
+		<title>Quality Score</title>
+				<script language="Javascript" type="text/javascript">
+=======
+<html>
+	<head>
+		<title>Quality Score</title>
+			<script language="Javascript" type="text/javascript">
+>>>>>>> cf6e8b5e58c2ca32f045777645fc2409524e3cdf
+		
+		function QualityScore() {
+			var avg = 0;
+			var msg = "Point is %s";
+			while(avg != -1) {
+				avg = parseInt(prompt("Enter average (-1 to quit):"));
+				
+				if (avg >= 90) {
+					msg = msg.replace("%s", "4");
+<<<<<<< HEAD
+=======
+					var pt = 4;
+>>>>>>> cf6e8b5e58c2ca32f045777645fc2409524e3cdf
+				}
+				
+				else if (avg >= 80 && avg < 89) {
+					msg = msg.replace("%s", "3");
+<<<<<<< HEAD
+=======
+					var pt = 3;
+>>>>>>> cf6e8b5e58c2ca32f045777645fc2409524e3cdf
+				}
+				
+				else if (avg >= 70 && avg < 79) {
+					msg = msg.replace("%s", "2");
+<<<<<<< HEAD
+=======
+					var pt = 2;
+>>>>>>> cf6e8b5e58c2ca32f045777645fc2409524e3cdf
+				}
+				
+				else if (avg >= 60 && avg < 69) {
+					msg = msg.replace("%s", "1");
+<<<<<<< HEAD
+				}
+				else if (avg < 60) {
+					msg = msg.replace("%s", "0");
+				}
+				alert(msg);
+				var msg = "Point is %s";
+			}
+			
+
+=======
+					var pt = 1;
+				}
+				else if (avg < 60) {
+					msg = msg.replace("%s", "0");
+					var pt = 0;
+				}
+				alert(msg + ". For a score of: " + avg);
+				var msg = "Point is %s";
+			}
+>>>>>>> cf6e8b5e58c2ca32f045777645fc2409524e3cdf
+		}
+		
+		</script>
+	</head>
+	
+	<body onload="QualityScore()">
+		<h2>Quality Score</h2>
+
+	</body>
+
+</html>

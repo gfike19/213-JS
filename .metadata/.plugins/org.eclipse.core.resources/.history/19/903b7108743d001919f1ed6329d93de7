@@ -1,0 +1,6 @@
+<?php
+$num1 = 25;
+$num2 = 5;
+print($num2 - $num1);
+print($num1 - $num2);
+?>
